@@ -1,0 +1,79 @@
+<!-- By ONANA vital -->
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="Design/styles.css" rel="stylesheet">
+    <link href="Plugins/animate.css" rel="stylesheet">
+    <link href="Plugins/tailwindcss/tailwind.min.css" rel="stylesheet">    
+    <!-- Title -->
+    <title>Meko!</title>
+  </head>
+  <!-- Body of App -->
+  <body class="body" id="body">
+    <!-- Loading -->
+    <!-- <div class="load">
+      <div class="loader-list">
+        <div class="one loader-top"></div>
+        <div class="two loader-top"></div>
+        <div class="three loader-top"></div>
+        <div class="four loader-top"></div>
+        <div class="loader" id="loader">0%</div>
+        <div class="one loader-bottom"></div>
+        <div class="two loader-bottom"></div>
+        <div class="three loader-bottom"></div>
+        <div class="four loader-bottom"></div>
+      </div>
+      <p class="text-center">From <br><b>ONANA vital</b></p>
+    </div> -->
+    <!-- App -->
+    <!-- <div class="flex flex-wrap justify-center" id="app">
+      <h1 class="text-bold text-4xl font-bold">Expédiez un courrier électronique!</h1>
+    </div> -->
+	<div class="flex flex-wrap align-center justify-between" id="contents">
+		<!-- First party -->
+		<div class="flex flex-wrap justify-center app-content" id="first-party">    
+			<div class="block" id="form">
+				<div class="flex justify-center align-middle" id="form-child">
+					<div class="block">
+						<div class="block">
+							<input type="text" class="name" placeholder="Pseudo" />
+						</div>
+						<div class="block">
+							<input type="email" class="phone" placeholder="Numéro de téléphone" />
+						</div>
+						<div class="block">
+							<textarea name="message" id="msg" cols="30" rows="5" placeholder="Redigez votre SMS"></textarea>
+						</div>
+						<div class="block">
+							<button type="submit" class="w-full text-center">
+								<span class="flex text-center font-bold justify-center">					
+									Envoyez		
+									<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="23" height="23" viewBox="0 0 24 24"><path d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z"/><path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"/></svg></span>
+							</button>
+						</div>
+						<br />
+						<div class="block">
+							<p>
+								Voulez-vous envoyez un <a href="email.html">mail</a> ?
+							</p>
+						</div>
+						<br /><br />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Last party -->
+		<div class="flexd" id="last-party"></div>
+	</div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="App/API.js"></script>
+    <script src="App/App.js"></script>
+    <script src="App/JQ.js"></script>
+    <script src="Plugins/jquery/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
+<!-- The end of HTML code -->

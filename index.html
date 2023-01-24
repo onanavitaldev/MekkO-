@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="Design/styles.css" rel="stylesheet">
+    <link href="Plugins/animate.css" rel="stylesheet">
+    <link href="Plugins/tailwindcss/tailwind.min.css" rel="stylesheet">    
+    <!-- Title -->
+    <title>Meko!</title>
+  </head>
+  <!-- Body of App -->
+  <body id="body">
+    <!-- Loading -->
+    <div class="load">
+      <div class="loader-list">
+        <div class="one loader-top"></div>
+        <div class="two loader-top"></div>
+        <div class="three loader-top"></div>
+        <div class="four loader-top"></div>
+        <div class="loader" id="loader">0%</div>
+        <div class="one loader-bottom"></div>
+        <div class="two loader-bottom"></div>
+        <div class="three loader-bottom"></div>
+        <div class="four loader-bottom"></div>
+      </div>
+      <!-- Created -->
+      <p class="text-center">From <br><b>ONANA vital</b></p>
+    </div>
+    <!-- App -->
+    <div class="flex flex-wrap justify-center" id="app">
+      <h1 class="text-bold text-4xl font-bold">Que voulez-vous faire ?</h1>
+    </div>
+    <br /><br />
+    <div class="block">
+      <div class="flex flex-wrap justify-center">
+          <a href="sms.html">
+            <div class="bg-white max-w-sm rounded-lg overflow-hidden text-center" id="option1">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">SMS/MMS</div>
+              <p class="text-gray-700 text-base">
+                Envoyez un simple SMS à un utilisateur d'une carte SIM.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="email.html">
+            <div class="bg-white max-w-sm rounded-lg overflow-hidden text-center" id="option2">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">e-Mail</div>
+              <p class="text-gray-700 text-base">
+                Expédiez un mail vers n'importe quelle boite mail.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="App/API.js"></script>
+    <script src="App/App.js"></script>
+    <script src="App/JQ.js"></script>
+    <script src="Plugins/jquery/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

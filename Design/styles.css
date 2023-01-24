@@ -1,0 +1,379 @@
+/* Designed by Vital */
+/* styles.css */
+
+/* Variables */
+:root
+{
+    --white: #f1f1f1;
+    --color: #762eb9;
+    --darkcolor: #05000a;
+    --gray: #d1d1d1;
+    --transition: all 0.5s ease-in 0s;
+    --radius: 50px;
+    --family: Montserrat;
+}
+
+/* DOM */
+*::selection
+{
+    background-color: var(--color);
+    color: var(--white);
+}
+html
+{
+    font-family: var(--family);
+    border: none;
+	scrollbar-width: 0;
+}
+
+/* Scroll Bar design */
+body::-webkit-scrollbar 
+{
+    display: none;
+}
+
+/* Body */
+body
+{
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+	url("../img/img3.jpg"); */
+	background-color: var(--white);
+	background-size: cover;
+    font-family: var(--family);
+    padding: 0;
+    margin: 0;
+    transition: var(--transition);
+}
+
+/* Loading */
+.load
+{
+    background-color: var(--darkcolor);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.loader-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -90px 0 0 -80px; 
+}
+
+
+.loader{
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    color: white;
+    border-radius: 50%;
+    transition: 1s all;
+}
+
+.loader-top{
+    position: absolute;
+    border: 5px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    -webkit-animation: loading linear infinite;
+    -moz-animation: loading linear infinite;
+    -o-animation: loading linear infinite;
+    animation: loading linear infinite; 
+}
+
+.loader-bottom{
+    position: absolute;
+    border: 5px solid transparent;
+    border-bottom-color: white;
+    border-radius: 50%;
+    -webkit-animation: loading linear infinite;
+    -moz-animation: loading linear infinite;
+    -o-animation: loading linear infinite;
+    animation: loading linear infinite; 
+}
+
+.loader-top.one{
+    top: 24px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    animation-duration: 1s;
+}
+.loader-top.two{
+    top: 37px;
+    left: 30px;
+    width: 90px;
+    height: 90px;
+    animation-duration: 1.2s;
+}
+.loader-top.three{
+    top: 50px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 1.4s;
+}
+.loader-top.four{
+    top: 64px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    animation-duration: 1.6s;
+}
+
+.loader-bottom.one{
+    top: 23px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    animation-duration: 1s;
+}
+.loader-bottom.two{
+    top: 42px;
+    left: 30px;
+    width: 90px;
+    height: 90px;
+    animation-duration: 1.2s;
+}
+.loader-bottom.three{
+    top: 51px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    animation-duration: 1.4s;
+}
+.loader-bottom.four{
+    top: 59px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    animation-duration: 1.6s;
+}
+
+@-webkit-keyframes loading {
+    from{
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+    to{
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+}
+
+@-moz-keyframes loading {
+    from{
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+    to{
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+}
+
+@-ms-keyframes loading {
+    from{
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+    to{
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+}
+
+@-ms-keyframes loading {
+    from{
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+    to{
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes loading {
+    from{
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+    to{
+        -webkit-transform: rotateZ(0);
+        -moz-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+}
+.load p
+{
+    color: var(--gray);
+    margin-bottom: -720px;
+}
+
+/* All link element of app */
+a
+{
+	color: var(--color);
+	text-decoration-line: underline;
+	transition: var(--transition);
+}
+a:hover
+{
+	text-decoration: none;
+}
+
+/* Body of app */
+.app-content
+{
+	animation: fadeInLeft 1s;
+}
+#contents #first-party
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 10em;
+}
+#contents #last-party
+{
+	background-image: linear-gradient(rgba(117, 46, 184, 0.837), rgba(11, 2, 19, 0.843)),
+	url("../img/img3.jpg");
+	background-size: cover;
+	width: 50%;
+	margin-bottom: -12em;
+}
+
+/* GUI of App */
+#app
+{
+    padding-top: 10em;
+}
+.flex .bg-white
+{
+    margin: 25px;
+    cursor: pointer;
+    border: 2px solid var(--gray);
+    transition: var(--transition);
+    opacity: 0.9;
+}
+.flex .bg-white:hover
+{
+    border: 2px solid var(--color);
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* form */
+#form
+{
+	margin-top: 100px;
+}
+#form #form-child
+{
+	background-color: #fff;
+	border: 1px solid #f1f1f1;
+	padding: 2em;
+	border-radius: 10px;
+}
+#form #form-child .block
+{
+	margin-bottom: 10px;
+	width: 100%;
+}
+#form #form-child .block input,
+#form #form-child .block textarea
+{
+	background-color: #fbfbfb;
+	width: 100%;
+	caret-color: var(--color);
+	border-radius: 5px;
+	border: 0.5px solid var(--white);
+	padding: 18px;
+	outline: none;
+	resize: none;
+	transition: var(--transition);
+}
+#form #form-child .block input:focus,
+#form #form-child .block textarea:focus
+{
+	border: 0.5px solid var(--color);
+}
+#form #form-child .block textarea::-webkit-scrollbar 
+{
+	background-color: var(--white);
+	border-radius: 1px;
+	width: 12px;
+}
+#form #form-child .block textarea::-webkit-scrollbar-corner 
+{
+	background-color: var(--white);
+	border-radius: 100vw;
+	width: 10px;
+} 
+#form #form-child .block textarea::-webkit-scrollbar-button 
+{
+	display: none;
+	border-radius: 50px;
+}
+#form #form-child .block textarea::-webkit-scrollbar-thumb 
+{
+	background-color: var(--color) !important;
+	border-radius: 50px;
+	width: 12px;
+	padding: 5em;
+	border: 0.25em solid #01010a;
+}  
+#form #form-child .block textarea::-webkit-scrollbar-thumb 
+{
+	background-color: var(--color) !important;
+	border-radius: 50px;
+	width: 12px;
+	padding: 5em;
+	border: 0.25em solid var(--white);
+}
+#form #form-child .block button
+{
+	text-align: center;
+	background-color: var(--color);
+	color: var(--white);
+	border: none;
+	outline: none;
+	padding: 0.8em 1em;
+	border-radius: 5px;
+	transition: var(--transition);
+}
+#form #form-child .block button:hover
+{
+	background-color: var(--darkcolor);
+}
+#form #form-child .block button span svg
+{
+	margin-left: 3px;
+}
